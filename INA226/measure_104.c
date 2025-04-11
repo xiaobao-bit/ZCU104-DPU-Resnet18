@@ -37,7 +37,7 @@ void populate_ina_array(ina *inas) {
             snprintf(inas[idx].current_path, sizeof(inas[idx].current_path),
                      "/sys/class/hwmon/%s/curr1_input", dir->d_name);
             snprintf(inas[idx].voltage_path, sizeof(inas[idx].voltage_path),
-                     "/sys/class/hwmon/%s/in1_input", dir->d_name);
+                     "/sys/class/hwmon/%s/in2_input", dir->d_name);
             snprintf(inas[idx].name, sizeof(inas[idx].name),
                      "INA%d", idx);
             inas[idx].last = 0;
